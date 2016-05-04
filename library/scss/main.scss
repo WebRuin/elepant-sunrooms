@@ -973,6 +973,10 @@
 			@include vendor('order', '2');
 			max-width: 48em;
 			width: 60%;
+
+			p{
+				color: #4e4e4e;
+			}
 		}
 
 		&:nth-child(2n) {
@@ -1475,13 +1479,13 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('justify-content', 'center');
+		@include vendor('background-image', ('linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.6))', 'url("../images/landing-sunroom.jpg")'));
 		cursor: default;
 		height: 100vh;
 		min-height: 35em;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		background: url('../images/landing-sunroom.jpg') no-repeat;
 		background-size: cover;
 		background-position: 0 -230px;
 
@@ -1524,7 +1528,7 @@
 			font-size: 1.4rem;
 			margin-bottom: 18px;
 			font-weight: bolder;
-			text-shadow: 3px 3px 0 rgba(0,0,0,0.7);
+			// text-shadow: 3px 3px 0 rgba(0,0,0,0.7);
 
 			a {
 				color: inherit;
@@ -1537,7 +1541,7 @@
 			@include vendor('transform', 'translateY(0)');
 			border: none;
 			bottom: 0;
-			color: #FF2C10;
+			color: #ED4933;
 			font-size: 0.8em;
 			font-weight: bold;
 			height: 8.5em;
@@ -1677,12 +1681,23 @@
 	#main {
 		> header {
 			@include padding(12em, 0);
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner.jpg")'));
+			// @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			text-align: center;
+			position: relative;
+			overflow: hidden;
+
+			.full-header {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: auto;
+				z-index: -1;
+			}
 
 			h2 {
 				font-size: 1.75em;

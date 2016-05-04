@@ -10,6 +10,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp-sass": "^2.2.0"
+    "autoprefixer": "^6.3.6",
+    "css-mqpacker": "^4.0.1",
+    "csswring": "^4.2.2",
+    "es6-promise": "^3.1.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minifier": "^0.1.4",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^4.2.2",
+    "postcss": "^5.0.19"
   }
 }
